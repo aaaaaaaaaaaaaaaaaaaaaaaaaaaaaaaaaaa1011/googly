@@ -1,0 +1,7 @@
+local monitor_a = peripheral.find("monitor")
+local width, height = monitor_a.getSize()
+local my_window = window.create(monitor_a, 1, 1, width, height, true)
+my_window.setBackgroundColour(colours.grey)
+my_window.setTextColour(colours.white)
+my_window.clear()
+my_window.write("winnow")
